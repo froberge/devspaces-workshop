@@ -1,0 +1,17 @@
+apiVersion: 1.0.0
+metadata:
+  name: oc-cli-workspace
+components:
+  - mountSources: true
+    command:
+      - tail
+    args:
+      - '-f'
+      - /dev/null
+    memoryLimit: 512Mi
+    type: dockerimage
+    volumes:
+      - name: kubeconfig
+        containerPath: /.kube
+    alias: oc
+    image: 'quay.io/openshift/origin-cli:4.8'
