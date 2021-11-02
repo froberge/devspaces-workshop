@@ -69,4 +69,4 @@ data:
 EOF
 ```
 
-[Secret Creation](images/secret-creation.png)
+![Secret Creation](images/secret-creation.png)
