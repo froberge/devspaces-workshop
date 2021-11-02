@@ -20,4 +20,4 @@ L'utilisateur doit finalement rentrer ses informations et clicker sur `Submit`
 ![Welcome screen](images/crw-create-workspace.png)
 
 
-:point_right: Suivant: [Installation du Openshift cli](cli-install.md)
+:point_right: Suivant: [Installation du cli de Openshift](cli-install.md)
