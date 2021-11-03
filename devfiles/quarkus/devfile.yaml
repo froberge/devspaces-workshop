@@ -33,15 +33,6 @@ components:
         port: 8080
         attributes:
           path: /
-      - name: 'debug'
-        port: 5005
-        attributes:
-          public: 'false'
-
-      - name: 'quickstart-endpoint'
-        port: 8080
-        attributes:
-          path: /
       - name: debug
         port: 5005
         attributes:
