@@ -5,8 +5,8 @@ projects:
   - name: quarkus-quickstarts
     source:
       type: git
-      location: 'https://github.com/froberge/simple-quarkus-service.git'
-      sparseCheckoutDir: getting-started
+      location: 'https://github.com/froberge/quarkus-quickstart'
+#      sparseCheckoutDir: getting-started
       branch: main
 components:
   - id: redhat/quarkus-java11/latest
