@@ -42,16 +42,10 @@ components:
         port: 8080
         attributes:
           path: /
-        name: hello-greeting-endpoint
-        port: 8080
-
-          public: 'false'
-        name: debug
+      - name: debug
         port: 5005
-      - attributes:
+        attributes:
           public: 'false'
-        name: tests
-        port: 8081
   - type: dockerimage
     alias: ubi-minimal
     image: 'registry.access.redhat.com/ubi8/ubi-minimal'
