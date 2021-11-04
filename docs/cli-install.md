@@ -89,4 +89,4 @@ Installer le `OpenShift CLI` sur CodeReady Workspace.
 Vous avez installé le CLI et vous vous êtes connecté à Openshift en ligne de commande.
 
 
-:point_right: Suivant: [Authentication à GitHub](docs/github-private.md)
+:point_right: Suivant: [Authentication à GitHub](github-private.md)
