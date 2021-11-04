@@ -10,7 +10,8 @@ Pour faciliter la collaboration au niveau du code et permettre au développeur d
 
 ## Étapes
 1. À partir de l'onglet `Create Worspace`
-![Create Workspace](images/crw-create-workspace.png)
+
+    ![Create Workspace](images/crw-create-workspace.png)
 
 2. Dans le champ `Git Repo URL` mettre le url du repo désiré. Pour l’atelier utilisons le url suivant et cliquer `Create & Open`
     ```
@@ -23,9 +24,11 @@ Pour faciliter la collaboration au niveau du code et permettre au développeur d
 
 
 3. Cliquer `Yes, I Trust`
+
 ![Trust Workspace Author](images/trust-author-2.png)
 
 4. Cliquer `Restart`
+
 ![vscode plugin](images/vscode-plugin.png)
 
 5. On peut maintenant partir un terminal.
