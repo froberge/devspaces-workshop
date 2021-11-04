@@ -1,72 +1,69 @@
-# Configurer GitHub OAuth
+# Configurer un accèes à un repository GitHub privé
 
-Il es possible de connecter CodeReady workspace vers des repository Github qui sont privé. Pour plus d'information il est possible d'aller sur la documentation de Github [Creating an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-apphttps://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
+Il es possible de connecter CodeReady workspace vers des repository Github qui sont privé avec utilisation d'une [token personnel](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) sur github. 
 
 ### Prerequis
 * Être connecté à la console web de `OpenShift` en temps qu'administrateur du cluster.
-* Avoir accès a Github.
+* Avoir un compte GitHub
+
+### Créer la `token personnel` sur Github.
 
 ## Créer Application Auth côté GitHub
 
-### Étapes:
-
-1. Connect au `client web OpenShift` pour trouvez les URL requis pour créer le OAuth Apps dans GitHub.
-
-2. Sélectionné le Project: openshift-workspaces
-![oc project](images/ocp-project-workspaces.png)
-
-3. Dans le menu de gauche choisir `Networking->Routes`, pour avoir les url d'accès.
-![oc routes](images/oc-routes-console.png)
-
-4. À partir de votre compte [Github](github.com), sous votre profile, selectionnez `setting`.
+1. À partir de votre compte [Github](github.com), sous votre profile, selectionnez `setting`.
 ![GitHub setting](images/github-setting.png)
 
 5. Selectionné `Developer settings`
 ![GitHub dev](images/github-devsetting.png)
 
-6. Selectionné `OAuth Apps`
-![GitHub Auth](images/github-auth.png)
+6. Selectionné `Personal access tokens`
+![GitHub personal token](images/github-personal-token.png)
 
-:warning: *si vous déjà enregistré une Apps, la fenêtre sera differente, ell montrera la liste des apps enregistré.*
+7. Clicker sur `Generate new token`et entrer les info.
+![GitHub personal token 2](images/github-access-token.png)
 
-7. Clicker sur `Register Application` et entré les information requise.
+* `Note`: Le nom pour la token
+* `Expiration`: Choisir l'expiration requise pour vos critère de sécurité. 
+*  `Select scopes`: Doit sélectionné repo au minimum
+* Clicker `Generate token`
 
-* `Applicaiton name`: le nom de votre choix: codeReady-worskpace
-* `Homepage URL`: Le url obtenu plus tot pour `codeready`
-*`Authorization callback URL`: Le url obtenu plus tot pour keycloak.
+:warning: Copier la token qui vient d'être généré car elle ne sera plus accessible.
 
-![GitHub Register](images/github-register-app.png)
 
-8. Clicker sur `Generate client secret`
-:warning: **Copier le secret car une fois sauver il ne sera plus accessible**
-
-## Créer le secret dans OpenShift
+## Créer les secrets dans OpenShift
+:warning: Cette étape peut-être fait qu'un fois que l'utilisateur c'est connecté a CodeReady workspace une première fois.
 
 ### Étapes:
 
-1. Connecte au `cli OpenShift` comme administrateur réseau.
+1. Se à `OpenShift` avec le  `cli OpenShift`
 
-2. Créer un nouveau `Secret` dans le namespace openshift-workspaces pour permettre la connection avec GitHub avec la commande suivante.
-
-`Modifiez les valeur entre <...> avec les valeur g/n/rer plus haut lors de la création de application OAuth
-
+2. Allez dans le project qui contient le CodeReady workspace. Le nom du projet devrait ressemble a quelques chose du genre:  'username'-codeready
 ```
-$ oc apply -f - <<EOF
-kind: Secret
-apiVersion: v1
-metadata:
-  name: github-oauth-config
-  namespace: openshift-workspaces 
-  labels:
-    app.kubernetes.io/part-of: che.eclipse.org
-    app.kubernetes.io/component: oauth-scm-configuration
-  annotations:
-    che.eclipse.org/oauth-scm-server: github
-type: Opaque
-data:
-  id: <OAUTH APP CLIENT ID> 
-  secret: <OAUTH APP CLIENT SECRET> 
-EOF
+oc project <your_project_name>
 ```
 
-![Secret Creation](images/secret-creation.png)
+3. Créer le nouveau `Secret`. Pour ce faire nous devons utiliser la token fait dans github plus tôt.
+
+```
+oc create secret generic git-credentials-secret --from-literal=credentials=https://<GITHUB_USER>:<PERSONAL_TOKEN>@github.com
+```
+
+4. Une fois le secret terminer nous devons annoter le secret comme suit:
+```
+oc annotate secret git-credentials-secret \
+che.eclipse.org/automount-workspace-secret='true' \
+che.eclipse.org/mount-path=/home/theia/.git-credentials \
+che.eclipse.org/mount-as=file \
+che.eclipse.org/git-credential='true'
+```
+
+5. Pour terminer, créons un `label secret`
+```
+oc label secret git-credentials-secret \
+app.kubernetes.io/part-of=che.eclipse.org \
+app.kubernetes.io/component=workspace-secret
+```
+
+:tada: FÉLICITATION
+
+Vous avez connectez a un repository privé sur GitHub.

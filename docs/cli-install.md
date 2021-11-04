@@ -50,7 +50,7 @@ Installer le `OpenShift CLI` sur CodeReady Workspace.
 
 2. Dans le champs `Git Repo URL` mettre le url suivant et clicker sur `Create & Open`
 ```
-https://github.com/froberge/crw-workshop/tree/main/devfile/ocp-cli-4.8
+https://github.com/froberge/crw-registry/tree/main/devfiles/ocp-cli-4.8
 ```
 ![Clone Repo](images/clone-ocp-cli-repo.png)
 
@@ -67,7 +67,7 @@ CodeReady Workspace va mainteannt procéder avec la création du workspace.
 5. On peut maintenant partir un terminal.
 
 
-### Connecter a OpenShift par le cl.
+### Connecter a OpenShift par le cli
 
 1. À partir de la console web de Openshift allez dans l'option `Copy login command`        
 ![Login command](images/login-command.png)

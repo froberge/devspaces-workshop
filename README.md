@@ -33,14 +33,13 @@ le Operator Hub de OpenShift, il fournit aux équipes une foundation plus rapide
 Dans cette atelier nous allons apprendre différent concepts en lien avec CodeReady workspace dans le but d'avoir un connaissance pratique de l'outils. L'atelier démontre certain concepts pour faciliter l'utilisation de CodeReady workspace.
 
 ### Sections:
- 1. [Prerequis](#prerequis)
- 2. [Installation de CodeReady Workspace](#installation)
- 3. [Connection d'un utilisateur](docs/user-connection.md)
- 4. [Installation du cli de Openshift](docs/cli-install.md)
- 5. Connecter a GitHub
-    * [Connectez à un repo Github public](docs/github-public.md)
-    * [Connectez à un repo Github privé](docs/github-private.md)
-5. 
+ * [Prerequis](#prerequis)
+ * [Installation de CodeReady Workspace](#installation)
+ * [Connection d'un utilisateur](docs/user-connection.md)
+ * [Installation du cli de Openshift](docs/cli-install.md)   
+ * [Connecter à un GitHub Privé](docs/github-private.md)
+ * [Création d'un workspace à partir de github](docs/workspace-creation.md)
+ * [Utiliser CodeReady Workspace](docs/codeready-howto.md)
 
 ### Prerequis
 

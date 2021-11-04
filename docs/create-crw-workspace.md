@@ -14,7 +14,10 @@ Clicker sur opérateur Red Hat CodeReady Workspace pour l'ouvrir:
 Dans la section `Details`, sous `Code Ready Workspace instance Specification` clicker sur Create instance.
 ![Create Workspace](images/crw-cluster-creation.png)
 
-Laissons toute les valeurs par default et clicker sur `Create`
+Dans la section storage changeons la strategy de storage pour per-workspace.
+![Create Workspace Storage](images/crw-cluster-creation-storage.png)
+
+Clicker sur `Create`
 ![Create Recaps](images/crw-cluster-recap.png)
 
 OpenShift commencera la création du `CheCluster`.  Clicker sur le cluster qui vient d'être créer pour voir les détails.
