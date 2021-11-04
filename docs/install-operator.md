@@ -30,4 +30,4 @@ Une fois l'installation terminée, on devrait voir opérateur Red Hat CodeReady 
 
 L'opérateur Red Hat CodeReady Workspaces est maintenant installé dans le cluster d’OpenShift.
 
- :point_right: Suivant: [Création d’une instance CodeReady Workspace](create-crw-workspace.md)
+:point_right: Suivant: [Création d’une instance CodeReady Workspace](create-crw-workspace.md)

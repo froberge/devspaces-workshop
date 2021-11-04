@@ -29,7 +29,7 @@ Bienvenue dans l'atelier de travail sur [**Code Ready Workspace**](https://www.r
 
 Dans cet atelier, nous allons apprendre différents concepts en lien avec CodeReady workspace dans le but d'avoir une connaissance pratique de l'outil. L'atelier démontre certains concepts pour faciliter l'utilisation de CodeReady workspace.
 
-### Table des matières:
+### Table des matières
  * [Prerequis](#prerequis)
  * [Installation de CodeReady Workspace](#installation)
  * [Connexion d'un utilisateur](docs/user-connection.md)
