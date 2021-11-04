@@ -1,18 +1,20 @@
-# Configuration dun Utilisateur
+# Configuration d’un Utilisateur
 
-Maintenant que opérateur a été installé et configuré il est maintenant temp de connecter a CodeReady Workspace pour vos utilisateur.
+Maintenant que opérateur a été installé et configuré il est maintenant temp de se connecter à CodeReady Workspace pour vos développeurs.
 
-Un fois que l'utilisateur a clicker sur le lien qui lui a été fourni, il arrivera sur un fenêtre d'authentification. 
+*Le lien pour CodeReady Workspace se trouve au niveau de la console Openshift dans les déteail de opérateur.*
+
+Étapes:
+
+1. Cliqué sur le lien qui lui fourni, ceci devrait ouvrir une fenetre d’authentification. 
 ![Login](images/crw-login.png)
 
-*username/password est le même que pour la connection à la plateforme OpenShift.*
+    *username/password est le même que pour la connexions à la plateforme d’OpenShift.*
 
-*Le lien pour CodeReady Workspace se trouve au niveau de la console Openshift dans les déteail de operateur.*
-
-Laissons les accès par défault et clicker sur `Allow selected permissions`
+2. Laissons les accès par défault et cliqué sur `Allow selected permissions`
 ![Access](images/crw-user-autorization.png)
 
-L'utilisateur doit finalement rentrer ses informations et clicker sur `Submit`
+3. L’utilisateur doit finalement rentrer ses informations et cliquer sur `Submit`
 ![Profile](images/crw-user-creation.png)
 
 :tada: FÉLICITATION
@@ -21,3 +23,5 @@ L'utilisateur doit finalement rentrer ses informations et clicker sur `Submit`
 
 
 :point_right: Suivant: [Installation du cli de Openshift](cli-install.md)
+
+

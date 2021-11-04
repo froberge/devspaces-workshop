@@ -1,35 +1,38 @@
 # Utilisation de CodeReady Workspace.
 
-Code Ready Workspace est un solutions de développement collaborative native Kubernetes pour le développement rapide d'application qui route sur OpenShift.
+CodeReady Workspace est une solution de développement collaboratif native Kubernetes pour le développement rapide d'application qui fonctionne sur OpenShift.
 
 ![Welcome screen](images/crw-create-workspace.png)
 
-Caractéristiqes:
+Caractéristiques:
 * [Workspaces](#workspace)
 * [IDE](#ide)
 
 
-
 ## Workspace
 
-Un Workspace représente l'endroit ou le project vie. Selon les paramètres mise en place par l'administrateur du cluster chaque utilisateur pourra avoir 1+ workspace qui roule silmutannément.
+Un workspace représente l'endroit ou le projet vie. Selon les paramètres mis en place par l'administrateur du cluster chaque utilisateur pourra avoir 1+ workspace qui roule simultanément.
 
-Ils exite plusieurs façon de créer un workspace.
+Il existe plusieurs façons de créer un workspace.
 
-1. Importer a partir d'un repository Git
+1. Importer a partir d'un repo Git
 ![Git import](images/custom-devfile.png)
-2. Selectionner à partir d'une template existante
+2. Sélectionné à partir d'un gabarit existant
 
 3. Créer un `Custom Workspace` en générant un Devfile
 ![Custom workspace](images/github-repo-url.png)
 
-4. À partir d'un apps qui est déja dans Openshift
+4. À partir d'une application qui est déjà dans OpenShift
 ![OpenShift workspace](images/ocp-codeready-app.png)
 
 
 ## IDE
 
-IDE est basé ressemble étrangement a VSCode et nous donnes les mêmes fonctionnalité.
-* Connection a Github avec un tab dédier
+IDE ressemble étrangement à VSCode et nous donnes les mêmes fonctionnalités.
+* Connexion à GitHub avec un onglet dédié
 * Remote debugging
-* Accèes a un terminal.
+* Accès à un terminal.
+
+
+:point_right: Retour: [Table des matières](../README.md#table-des-matières)
+
