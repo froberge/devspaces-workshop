@@ -67,4 +67,4 @@ Il est possible de connecter CodeReady workspace vers des repos GitHub qui sont 
 
 Vous vous êtes authentifié avec GitHub.
 
-:point_right: Suivant: [Création d'un workspace à partir de GitHub](docs/workspace-creation.md)
+:point_right: Suivant: [Création d'un workspace à partir de GitHub](workspace-creation.md)
