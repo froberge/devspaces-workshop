@@ -2,6 +2,8 @@
 
 Pour faciliter la collaboration au niveau du code et permettre au développeur d'être fonctionnel en quelques minutes, il est possible de créer un nouveau workspace au niveau de CodeReady Workspace à partir d'un repo GitHub.
 
+:WARNING: Cette façcon de faire fonctionne seulement si le repo  GitHub ou se trouve le devFile est public.
+
 ## Prérequis.
 * Avoir un compte GitHub, et avoir fait les [étapes de connection à GitHub](docs/github-private.md).
 * Avoir un [DevFile](https://devfile.io/docs/devfile/2.1.0/user-guide/index.html) au niveau du repo.
@@ -17,6 +19,8 @@ Pour faciliter la collaboration au niveau du code et permettre au développeur d
     ```
     https://github.com/froberge/quarkus-quickstarts/
     ```
+
+
     ![Clone Repo](images/github-repo-url.png)
 
     CodeReady Workspace va maintenant procéder avec la création du workspace et le clone du code.

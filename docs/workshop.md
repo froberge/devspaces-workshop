@@ -13,8 +13,16 @@ Il est maintenant temps de coder notre première application.
 
     ![Custom Workspace](images/custom-workspace.png)
 
-2. Dans la section DevFile, remplacer le contenu par le contenu du  [DevFile](https://raw.githubusercontent.com/froberge/crw-registry/main/devfiles/quarkus-quickstart/devfile.yaml) suivant.
+2. Dans la section DevFile, dans le champs `Enter devfile URL` mettre le liens vers le fichier devfile.yaml désirez. 
 
+    > Si le vous avez pas besoin de changer le devfile pour pointer faire votre projet, vous pouver utiliser le lien suivant.
+    ```
+    https://raw.githubusercontent.com/froberge/crw-registry/main/devfiles/quarkus-hibernates/devfile.yaml
+    ```
+    ![Custom Workspace](images/crw-load-devfile.png)
+
+    Cliqué sur `Load Devfile`, Le fichier devrait loader la boite texte.
+    
 3. Cliqué sur `Create & Open`
 
     CodeReady workspace commencera à importer le code et créer les conteneur nécessaire.
