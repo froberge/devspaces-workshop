@@ -13,7 +13,7 @@ Il est maintenant temps de coder notre première application.
 
     ![Custom Workspace](images/custom-workspace.png)
 
-2. Dans la section DevFile, remplacer le contenu par le contenu du  [DevFile](https://raw.githubusercontent.com/froberge/crw-registry/main/devfiles/quarkus-quickstart/devfile.yaml) suivant.
+2. Dans la section DevFile, remplacer le contenu par le contenu du  [DevFile](https://raw.githubusercontent.com/LaurentMargelidon/IntegrationPoc/main/workshop-0/Devfiles/quarkus-hibernate/devfile.yaml) suivant.
 
 3. Cliqué sur `Create & Open`
 
