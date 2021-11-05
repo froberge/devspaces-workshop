@@ -37,7 +37,7 @@ Dans cet atelier, nous allons apprendre différents concepts en lien avec CodeRe
  * [Authentication à GitHub](docs/github-private.md)
  * [Création d'un workspace à partir de GitHub](docs/workspace-creation.md)
  * [Utiliser CodeReady Workspace](docs/codeready-howto.md)
- * [Atelier Quarkus](docs/worshop.md)
+ * [Atelier Quarkus](docs/workshop.md)
 
 ### Prérequis
 
