@@ -13,21 +13,21 @@ Il est maintenant temps de coder notre première application.
 
     ![Custom Workspace](images/custom-workspace.png)
 
-2. Dans la section DevFile, dans le champs `Enter devfile URL` mettre le liens vers le fichier devfile.yaml désirez. 
+2. Dans la section DevFile, dans le champ `Enter devfile URL` mettre le lien vers le fichier devfile.yaml désirez. 
 
-    > Si le vous avez pas besoin de changer le devfile pour pointer faire votre projet, vous pouver utiliser le lien suivant.
+    > Si le vous n’avez pas besoin de changer le devfile pour pointer faire votre projet, vous pouvez utiliser le lien suivant.
     ```
     https://raw.githubusercontent.com/froberge/crw-registry/main/devfiles/quarkus-hibernates/devfile.yaml
     ```
     ![Custom Workspace](images/crw-load-devfile.png)
 
-    Cliqué sur `Load Devfile`, Le fichier devrait loader la boite texte.
-    
+    Cliqué sur `Load Devfile`, le fichier devrait être chargé dans la boite texte.
+
 3. Cliqué sur `Create & Open`
 
-    CodeReady workspace commencera à importer le code et créer les conteneur nécessaire.
+    CodeReady workspace commencera à importer le code et créer les conteneurs nécessaires.
 
-4. Dans l'onglet GitHub, ce faire une branch personnel pour l'atelier.
+4. Dans l'onglet GitHub, se faire une branche personnelle pour l'atelier.
 
     nom: 'username'-rh-workshop
 
@@ -37,7 +37,7 @@ Il est maintenant temps de coder notre première application.
 
 ## Étapes de code:
 
-1. Ouvrir un `New terminal` Quarkus pour nous aider à ajouter les extensions requise.
+1. Ouvrir un `New terminal` Quarkus pour nous aider à ajouter les extensions requises.
 
     ![New Terminal](images/crw-newterminal.png)
 
@@ -51,7 +51,7 @@ Il est maintenant temps de coder notre première application.
 
     ![Extensions](images/extension-result.png)
 
-3. Faire la meme chose avec Jackson pour retourner un object JSON
+3. Faire la même chose avec Jackson pour retourner un objet JSON
 
     ```
     ./mvnw quarkus:add-extension -Dextensions="quarkus-resteasy-jackson"
@@ -66,10 +66,10 @@ Il est maintenant temps de coder notre première application.
     quarkus.datasource.jdbc.url=jdbc:postgresql://localhost/shop
     ```
 
-5. Faire une entities qui représente la table en BD.
+5. Faire une entité qui représente la table en BD.
 
     * Dans le répertoire `src/main/java/com.thecat/getting/started` créer un répertoire `model`
-    * Dans le répertoire créer un fichier `Product.java`
+    * Dans le répertoire, créez un fichier `Product.java`
     * Copier le code suivant.
 
     ```
@@ -113,7 +113,7 @@ Il est maintenant temps de coder notre première application.
     }
     ```
 
-6. Faire un service pour lire l'entitie
+6. Faire un service pour lire l'entité
     * Dans le répertoire `src/main/java/com.thecat/getting/started/services` faire un fichier `ProductService.java`
     * Copier le code suivant
     ```
@@ -168,14 +168,14 @@ Il est maintenant temps de coder notre première application.
 
 :tada: ON PEUT MAINTENANT DÉMARRER NOTRE APPLICATION.
 
-Le nouveau endpoint sera disponible a l'adresse suivante.
+Le nouveau endpoint sera disponible à l'adresse suivante.
 > https://<route>/products
 
 ### Challenge
-Amusons nous à ajouter d'autre enpoints.
+Amusons-nous à ajouter d'autre endpoints.
 
 * Trouvez un produit par id.
 * Trouver la liste de produit selon une grandeur
-* Retourner le nombre total de produit.
+* Retourner le nombre total de produits.
 
 
