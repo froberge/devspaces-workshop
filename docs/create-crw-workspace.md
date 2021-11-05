@@ -19,10 +19,13 @@ Maintenant que l'opérateur est installé, nous devons créer une instance de Co
     ![Create Workspace Storage](images/crw-cluster-creation-storage.png)
 
     Cliqué sur `Create`
+
+
+4. OpenShift commencera la création du `CheCluster`.  
     ![Create Recaps](images/crw-cluster-recap.png)
 
-4. OpenShift commencera la création du `CheCluster`.  Cliqué sur le cluster qui vient d'être créé pour voir les détails.
-![Cluster details](images/crw-cluster-detail.png)
+    Cliqué sur le cluster qui vient d'être créé pour voir les détails.
+    ![Cluster details](images/crw-cluster-detail.png)
 
     `CodeReady Workspace` est prêt, lorsque le `CodeReady Workspace URL` apparait.
 

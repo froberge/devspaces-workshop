@@ -8,6 +8,7 @@ CodeReady workspace est un "add-on" pour OpenShift. Il est installé par un opé
 Se connecter à OpenShift avec un utilisateur qui à les droits administrateur sur le cluster. 
 
 Une fois connectée, on devrait voir la perspective suivante:
+
 ![Administration](images/admin-view.png)
 
 #### Étape 2:

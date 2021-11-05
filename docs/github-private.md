@@ -13,12 +13,15 @@ Il est possible de connecter CodeReady workspace vers des repos GitHub qui sont 
     ![GitHub setting](images/github-setting.png)
 
 2. Sélectionné `Developer settings`
+
     ![GitHub dev](images/github-devsetting.png)
 
 3. Sélectionné `Personal access tokens`
+
     ![GitHub personal token](images/github-personal-token.png)
 
 7. Cliqué sur `Generate new token`et entrer les info.
+
 ![GitHub personal token 2](images/github-access-token.png)
 
 * `Note`: Un nom pour la token
@@ -64,4 +67,4 @@ Il est possible de connecter CodeReady workspace vers des repos GitHub qui sont 
 
 Vous vous êtes authentifié avec GitHub.
 
-:point_right: Suivant: [Création d'un workspace à partir de GitHub](docs/workspace-creation.md)
+:point_right: Suivant: [Création d'un workspace à partir de GitHub](workspace-creation.md)

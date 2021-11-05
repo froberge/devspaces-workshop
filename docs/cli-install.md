@@ -46,7 +46,7 @@ Installer le `OpenShift CLI` sur CodeReady Workspace.
 
 1. À partir de l'onglet `Create Worspace`
 
-![Create Workspace](images/crw-create-workspace.png)
+    ![Create Workspace](images/crw-create-workspace.png)
 
 2. Dans le champ `Git Repo URL` mettre le url suivant et cliquer sur `Create & Open`
     ```
@@ -58,10 +58,12 @@ Installer le `OpenShift CLI` sur CodeReady Workspace.
     ![Workspace creation Repo](images/ocp-cli-workspace-creation.png)
 
 3. Clicker sur `Yes, I Trust`
-![Trust Workspace Author](images/trust-author.png)
+
+    ![Trust Workspace Author](images/trust-author.png)
 
 4. Clicker sur `Restart`
-![vscode plugin](images/vscode-plugin.png)
+
+    ![vscode plugin](images/vscode-plugin.png)
 
 5. On peut maintenant démarrer un terminal.
 
@@ -79,6 +81,7 @@ Installer le `OpenShift CLI` sur CodeReady Workspace.
 4. Coller la ligne dans le terminal.
 
 5. Voici un example de résultat.
+
 ![Example](images/terminal-example.png)
 
 :tada: FÉLICITATION
@@ -86,4 +89,4 @@ Installer le `OpenShift CLI` sur CodeReady Workspace.
 Vous avez installé le CLI et vous vous êtes connecté à Openshift en ligne de commande.
 
 
-:point_right: Suivant: [Authentication à GitHub](docs/github-private.md)
+:point_right: Suivant: [Authentication à GitHub](github-private.md)
