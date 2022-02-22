@@ -17,7 +17,7 @@ Pour faciliter la collaboration au niveau du code et permettre au développeur d
 
 2. Dans le champ `Git Repo URL` mettre le url du repo désiré. Pour l’atelier utilisons le url suivant et cliquer `Create & Open`
     ```
-    https://github.com/froberge/quarkus-quickstarts/
+    https://github.com/froberge/simple-quarkus-crud/
     ```
 
 
