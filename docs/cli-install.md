@@ -7,7 +7,7 @@ Grâce à l'interface de ligne de commande (CLI) il est possible de créer des a
 
 Dans le cadre de l’atelier nous proposons 2 façons d'installer le CLI de OpenShift.
 1. [Installation sur son ordinateur](#option-1)
-2. [Installation dans CodeReady Workspace](#option2)
+2. [Installation dans OpenShift Dev Spaces](#option2)
 ---
 
 ## Option 1
@@ -42,7 +42,7 @@ Kubernetes Version: v1.21.1+a620f50
 
 ## Option 2
 
-Installer le `OpenShift CLI` sur CodeReady Workspace.
+Installer le `OpenShift CLI` sur OpenShift Dev Spaces.
 
 1. À partir de l'onglet `Create Worspace`
 
@@ -54,7 +54,7 @@ Installer le `OpenShift CLI` sur CodeReady Workspace.
     ```
     ![Clone Repo](images/clone-ocp-cli-repo.png)
 
-    CodeReady Workspace va maintenant procéder avec la création du workspace.
+    OpenShift Dev Spaces va maintenant procéder avec la création du workspace.
     ![Workspace creation Repo](images/ocp-cli-workspace-creation.png)
 
 3. Clicker sur `Yes, I Trust`

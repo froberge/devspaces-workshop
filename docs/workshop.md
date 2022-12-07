@@ -9,7 +9,7 @@ Il est maintenant temps de coder notre première application.
 
 ## Étapes de création du Workspace:
 
-1. Faire un Workspace dans CodeReady workspace en utilisant un `Custom Workspace`.
+1. Faire un Workspace dans OpenShift Dev Spaces workspace en utilisant un `Custom Workspace`.
 
     ![Custom Workspace](images/custom-workspace.png)
 
@@ -25,7 +25,7 @@ Il est maintenant temps de coder notre première application.
 
 3. Cliqué sur `Create & Open`
 
-    CodeReady workspace commencera à importer le code et créer les conteneurs nécessaires.
+    OpenShift Dev Spaces commencera à importer le code et créer les conteneurs nécessaires.
 
 4. Dans l'onglet GitHub, se faire une branche personnelle pour l'atelier.
 

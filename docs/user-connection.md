@@ -1,8 +1,8 @@
 # Configuration d’un Utilisateur
 
-Maintenant que opérateur a été installé et configuré il est maintenant temp de se connecter à CodeReady Workspace pour vos développeurs.
+Maintenant que opérateur a été installé et configuré il est maintenant temp de se connecter à OpenShift Dev Spaces pour vos développeurs.
 
-*Le lien pour CodeReady Workspace se trouve au niveau de la console Openshift dans les déteail de opérateur.*
+*Le lien pour OpenShift Dev Spaces se trouve au niveau de la console Openshift dans les détails de opérateur.*
 
 Étapes:
 

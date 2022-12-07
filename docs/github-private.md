@@ -1,6 +1,6 @@
 # Configurer l'accès à GitHub
 
-Il est possible de connecter CodeReady workspace vers des repos GitHub qui sont privés avec utilisation d'une [token personnel](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) sur GitHub.figuration est aussi nécessaire pour contribuer du code dans un repo public.
+Il est possible de connecter OpenShift Dev Spaces vers des repos GitHub qui sont privés avec utilisation d'une [token personnel](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) sur GitHub.figuration est aussi nécessaire pour contribuer du code dans un repo public.
 
 ### Prerequis
 * Être connecté à la console web de `OpenShift` avec son compte.
@@ -33,11 +33,11 @@ Il est possible de connecter CodeReady workspace vers des repos GitHub qui sont 
 
 
 ## Créer les secrets dans OpenShift
-:warning: cette étape peut-être fait qu'une fois que l'utilisateur s'est connecté a CodeReady workspace une première fois.
+:warning: cette étape peut-être fait qu'une fois que l'utilisateur s'est connecté a OpenShift Dev Spaces une première fois.
 
 1. Se connecter à `OpenShift` avec le  `cli OpenShift`
 
-2. Allez dans le projet qui contient le CodeReady workspace. Le nom du projet devrait ressemble à quelques chose du genre:  'username'-codeready
+2. Allez dans le projet qui contient le OpenShift Dev Spaces Le nom du projet devrait ressemble à quelques chose du genre:  'username'-devspaces-
     ```
     oc project <your_project_name>
     ```

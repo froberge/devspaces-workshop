@@ -1,4 +1,4 @@
-# Créer une instance de CodeReady Workspace.
+# Créer une instance de OpenShift Dev Spaces.
 
 Maintenant que l'opérateur est installé, nous devons créer une instance de CodeReady Workspace dans le cluster.
 
@@ -8,11 +8,11 @@ Maintenant que l'opérateur est installé, nous devons créer une instance de Co
 ![Installed Operator Tab](images/installed-operators.png)
 
 
-2. Cliqué sur l’opérateur Red Hat CodeReady Workspace pour l'ouvrir:
+2. Cliqué sur l’opérateur Red Hat OpenShift Dev Spaces pour l'ouvrir:
 ![CRW install](images/crw-install-operator.png)
 
 
-3. Dans la section `Details`, sous `CodeReady Workspace instance Specification` cliquer sur `Create instance`.
+3. Dans la section `Details`, sous `OpenShift Dev Spaces instance Specification` cliquer sur `Create instance`.
 ![Create Workspace](images/crw-cluster-creation.png)
 
     Dans la section storage changeons la strategie de storage pour `per-workspace`.
@@ -27,10 +27,10 @@ Maintenant que l'opérateur est installé, nous devons créer une instance de Co
     Cliqué sur le cluster qui vient d'être créé pour voir les détails.
     ![Cluster details](images/crw-cluster-detail.png)
 
-    `CodeReady Workspace` est prêt, lorsque le `CodeReady Workspace URL` apparait.
+    `OpenShift Dev Spaces` est prêt, lorsque le `OpenShift Dev Spaces URL` apparait.
 
 :tada: FÉLICITATION
 
-Vous avez construit l'instance du CodeReady Workspace requis pour son utilisation. Vous pouvez maintenant partager l’URL avec les développeurs. Leur environnement sera créé lors de leur première connexion.
+Vous avez construit l'instance du OpenShift Dev Spaces requis pour son utilisation. Vous pouvez maintenant partager l’URL avec les développeurs. Leur environnement sera créé lors de leur première connexion.
 
 :point_right: Suivant: [Connection d'un utilisateur](user-connection.md)

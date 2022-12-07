@@ -1,6 +1,6 @@
 # Configurer GitHub OAuth
 
-Il es possible de connecter CodeReady workspace vers des repository Github qui sont privé. Pour plus d'information il est possible d'aller sur la documentation de Github [Creating an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-apphttps://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
+Il es possible de connecter CodeOpenShift Dev Spaces vers des repository Github qui sont privé. Pour plus d'information il est possible d'aller sur la documentation de Github [Creating an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-apphttps://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
 
 ### Prerequis
 * Être connecté à la console web de `OpenShift` en temps qu'administrateur du cluster.

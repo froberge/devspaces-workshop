@@ -1,6 +1,6 @@
 # Création d'un workspace à partir d'un repo GitHub.
 
-Pour faciliter la collaboration au niveau du code et permettre au développeur d'être fonctionnel en quelques minutes, il est possible de créer un nouveau workspace au niveau de CodeReady Workspace à partir d'un repo GitHub.
+Pour faciliter la collaboration au niveau du code et permettre au développeur d'être fonctionnel en quelques minutes, il est possible de créer un nouveau workspace au niveau de OpenShift Dev Spaces à partir d'un repo GitHub.
 
 :WARNING: Cette façcon de faire fonctionne seulement si le repo  GitHub ou se trouve le devFile est public.
 
@@ -23,7 +23,7 @@ Pour faciliter la collaboration au niveau du code et permettre au développeur d
 
     ![Clone Repo](images/github-repo-url.png)
 
-    CodeReady Workspace va maintenant procéder avec la création du workspace et le clone du code.
+    OpenShift Dev Spaces va maintenant procéder avec la création du workspace et le clone du code.
     ![Workspace creation Repo](images/ocp-cli-workspace-creation.png)
 
 
@@ -40,6 +40,6 @@ Pour faciliter la collaboration au niveau du code et permettre au développeur d
 
 :tada: FÉLICITATION
 
-Notre première application a été cloner dans CodeReady Workspace, on peut maintenant commencé a travailler.
+Notre première application a été cloner dans OpenShift Dev Spaces, on peut maintenant commencé a travailler.
 
 :point_right: Retour: [Table des matières](../README.md#table-des-matières)
