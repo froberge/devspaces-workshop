@@ -42,14 +42,49 @@ Il est possible de connecter OpenShift Dev Spaces vers des repos GitHub qui sont
     oc project <your_project_name>
     ```
 
-3. Créer le nouveau `Secret`. Pour ce faire nous devons utiliser la token fait dans github plus tôt, et remplacer les élément entre <, >
+3. Créer le nouveau `Secret`. Pour ce faire nous devons obtenir un token pour autoriser OpenShift DevSpace d'accéder Github.
+Replacez les 2 elements entre < > avec les valeur approrié.
+
+    * __username__
+        ```
+        echo -n 'github user' | base64
+        ```
+
+    * __OAuth Apps token define in Github developper setting__
+        ```
+        echo -n 'token generé dans Github' | base64
     ```
-    oc create secret generic git-credentials-secret --from-literal=credentials=https://<GITHUB_USER>:<PERSONAL_TOKEN>@github.com
+
+    * Préparer le secret en Remplaçant les valeur entre < > obtenu auparavent.
+
+    ```
+    kind: Secret
+    apiVersion: v1
+    metadata:
+    name: github-oauth-config
+    labels:
+        app.kubernetes.io/part-of: che.eclipse.org
+        app.kubernetes.io/component: oauth-scm-configuration
+    annotations:
+        che.eclipse.org/oauth-scm-server: github
+        che.eclipse.org/scm-server-endpoint: https://github.com
+        che.eclipse.org/scm-github-disable-subdomain-isolation: "<true_or_false>"
+    type: Opaque
+    data:
+    id: < base64 username >
+    secret: < base64 token >
+    ```
+
+    * Appliquer le secret dans le bon namespace.
+    ```
+    oc apply -f - <<EOF
+    <Secret_prepared_in_the_previous_step>
+    EOF
     ```
 
 4. Une fois le secret créé, nous devons annoter le secret comme suit:
     ```
-    oc annotate secret git-credentials-secret \
+    oc annotate secret github-oauth-config \
     che.eclipse.org/automount-workspace-secret='true' \
     che.eclipse.org/mount-path=/home/theia/.git-credentials \
     che.eclipse.org/mount-as=file \
@@ -58,7 +93,7 @@ Il est possible de connecter OpenShift Dev Spaces vers des repos GitHub qui sont
 
 5. Pour finir, créons un `label secret`
     ```
-    oc label secret git-credentials-secret \
+    oc label secret github-oauth-config \
     app.kubernetes.io/part-of=che.eclipse.org \
     app.kubernetes.io/component=workspace-secret
     ```
